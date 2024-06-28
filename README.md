@@ -22,7 +22,7 @@
 
 # Instructions for use [en]
 1. The project is based on [UniAnimate](https://github.com/ali-vilab/UniAnimate). I only built the Docker image on this project and wrote a non-completed script of WebUI with the help of Claude 3.5. You can continue to improve it yourself (for example, the modification and saving method of the configuration file).
-2. You can also use this UI script if you are installing the Windows version, but make sure that your directory paths are set correctly. It is recommended to use 'pip install -r requirements2.txt 'for the project to deploy from scratch, which is adapted to python = 3.10, CUDA = 12.1, pytorch = 2.2.2
+2. You can also use this UI script if you are installing the Windows version, but make sure that your directory paths are set correctly. It is recommended to use `pip install -r requirements2.txt` for the project to deploy from scratch, which is adapted to python = 3.10, CUDA = 12.1, pytorch = 2.2.2
 3. Docker image is uploading...
 4. The progress bar of webui is displayed for reference only. The specific execution progress and steps are subject to those displayed on the back command line. (In fact, I am not good at using Gradio ^_^)
 
