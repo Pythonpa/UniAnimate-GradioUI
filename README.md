@@ -2,7 +2,16 @@
 # 使用说明 [zh]
 1. 项目基于[UniAnimate](https://github.com/ali-vilab/UniAnimate),我仅在此项目基础上做了Docker镜像的构建，以及借助Claude 3.5的共同协助，写了一个非完成体的WebUI脚本，您可以继续自行完善（例如：配置文件的修改保存方法）。
 2. 如果你安装的是Windows版本，也可以使用该UI脚本，但是请确保你的各目录路径设置正确。从头部署项目建议用`pip install -r requirements2.txt`,该依赖适配于python=3.10, CUDA=12.1, pytorch=2.2.2 
-3. Docker镜像上传中...
+3. Docker的基础镜像基于[pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime](https://hub.docker.com/layers/pytorch/pytorch/2.2.2-cuda12.1-cudnn8-runtime/images/sha256-923f687790bec78081c357e71dcd5dcef80b0cc00f6c34484902a5e83362c854?context=explore)这个官方镜像，你也可以自行选择其他版本的pytorch和CUDA。另外，镜像默认挂载卷`D:\PythonProject\UniAnimate:/workspace/UniAnimate`，你可以在启动容器时，自行修改挂载卷的路径。镜像使用方法：
+    - a. 拉取镜像
+    ```shell
+    docker pull aimaster104/unianimate:webui
+    ```
+    
+    - b. 启动容器
+    ```shell
+    docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate -w /workspace/UniAnimate -d aimaster104/unianimate:webui python3 -m webui
+    ```
     
 4. WebUI的进度条显示仅供参考，具体执行进度和步骤还是以后台命令行显示的为准。（其实是因为不太擅长用Gradio, ^_^）
 ![image-1](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/16b7a35a-b27a-4a04-83d3-e845c5d35a85)
@@ -23,7 +32,18 @@
 # Instructions for use [en]
 1. The project is based on [UniAnimate](https://github.com/ali-vilab/UniAnimate). I only built the Docker image on this project and wrote a non-completed script of WebUI with the help of Claude 3.5. You can continue to improve it yourself (for example, the modification and saving method of the configuration file).
 2. You can also use this UI script if you are installing the Windows version, but make sure that your directory paths are set correctly. It is recommended to use `pip install -r requirements2.txt` for the project to deploy from scratch, which is adapted to python = 3.10, CUDA = 12.1, pytorch = 2.2.2
-3. Docker image is uploading...
+3. This Docker image is based on [pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime](https://hub.docker.com/layers/pytorch/pytorch/2.2.2-cuda12.1-cudnn8-runtime/images/sha256-923f687790bec78081c357e71dcd5dcef80b0cc00f6c34484902a5e83362c854?context=explore)，You can also choose other versions of pytorch and CUDA. In addition, the default mount volume of the mirror is `D:\PythonProject\UniAnimate:/workspace/UniAnimate`. You can modify the path of the mount volume when starting the container. Docker use method:
+   - a. Docker pull
+    ```shell
+    docker pull aimaster104/unianimate:webui
+    ```
+    
+    - b. Docker run
+    ```shell
+    docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate -w /workspace/UniAnimate -d aimaster104/unianimate:webui python3 -m webui
+    ```
+     
+
 4. The progress bar of webui is displayed for reference only. The specific execution progress and steps are subject to those displayed on the back command line. (In fact, I am not good at using Gradio ^_^)
 
 ![image-1](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/16b7a35a-b27a-4a04-83d3-e845c5d35a85)
