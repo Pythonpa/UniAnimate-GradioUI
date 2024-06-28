@@ -9,7 +9,7 @@
     
     - 启动容器
     ```shell
-    docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate  -d UniAnimate:webui  cd /workspace/UniAnimate/ python3 -m webui
+    docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate  -d UniAnimate:webui  cd UniAnimate/ python3 -m webui
 
     ```
     
