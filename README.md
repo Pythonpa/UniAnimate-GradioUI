@@ -19,7 +19,7 @@
 
 
 5. 最终视频生成结果在`/outputs/UniAnimate_infer/`文件夹中，你也可以自行修改生成结果的保存路径。
-6. 关于(模型下载，请安装官方说明进行)[https://github.com/ali-vilab/UniAnimate?tab=readme-ov-file#2-download-the-pretrained-checkpoints]，另外，项目运行时，模型加载时间可能较长，请耐心等待。
+6. 关于(模型下载官方说明)[https://github.com/ali-vilab/UniAnimate?tab=readme-ov-file#2-download-the-pretrained-checkpoints]，另外，项目运行时，模型加载时间可能较长，请耐心等待。
 7. 如果你的显卡和内存硬件不够好（低于12G显存&16G内存），请选择用`[512,768]`的像素尺寸。
 # 我的联系方式
 我的抖音账号: [AI大师工作流](https://www.douyin.com/user/MS4wLjABAAAAviq9ixG7tShWv_AJNEvCqlwZXd8YRTyCygSNpZ7J0aQ)
