@@ -4,12 +4,12 @@
 2. [仍在上传中...] Docker的基础镜像是基于[pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime](https://hub.docker.com/layers/pytorch/pytorch/2.2.2-cuda12.1-cudnn8-runtime/images/sha256-923f687790bec78081c357e71dcd5dcef80b0cc00f6c34484902a5e83362c854?context=explore)这个官方镜像的，你也可以自行选择其他版本的pytorch和CUDA。另外，镜像默认挂载卷`D:\PythonProject\UniAnimate:/workspace/UniAnimate`，你可以在启动容器时，自行修改挂载卷的路径。记住，尤其是你下载和保存项目的checkpoints文件夹，务必要挂载上。
     - 拉取镜像
     ```shell
-    docker pull unianimate:webui
+    docker pull aimaster104/unianimate:webui
     ```
     
     - 启动容器
     ```shell
-    docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate  -d unianimate:webui  cd UniAnimate/ python3 -m webui
+    docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate  -d aimaster104/unianimate:webui  cd UniAnimate/ python3 -m webui
 
     ```
     
