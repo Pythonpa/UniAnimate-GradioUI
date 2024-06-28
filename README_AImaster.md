@@ -1,4 +1,4 @@
-# 使用说明 [zh]
+![image](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/57c9abc6-162d-4e79-8c82-381342869fbf)# 使用说明 [zh]
 1. 项目基于[UniAnimate](https://github.com/ali-vilab/UniAnimate),我仅在此项目基础上做了Docker镜像的构建，以及借助Claude 3.5的共同协助，写了一个非完成体的WebUI脚本，您可以继续自行完善（例如：配置文件的修改保存方法）。
 2. [上传中，未完成]Docker的基础镜像是基于[pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime](https://hub.docker.com/layers/pytorch/pytorch/2.2.2-cuda12.1-cudnn8-runtime/images/sha256-923f687790bec78081c357e71dcd5dcef80b0cc00f6c34484902a5e83362c854?context=explore)这个官方镜像的，你也可以自行选择其他版本的pytorch和CUDA。另外，镜像默认挂载卷`D:\PythonProject\UniAnimate:/workspace/UniAnimate`，你可以在启动容器时，自行修改挂载卷的路径。
     - 拉取镜像
@@ -13,9 +13,9 @@
     ```
     
 3. webui的进度条显示仅供参考，具体执行进度和步骤还是以后台命令行显示的为准。（其实是因为不太擅长用Gradio, ^_^）
+![image-1](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/16b7a35a-b27a-4a04-83d3-e845c5d35a85)
+![image](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/c0da755d-1cfa-434c-b45e-001d2cbb3af7)
 
-![alt text](image.png)
-![alt text](image-1.png)
 
 4. 最终视频生成结果在`/outputs/UniAnimate_infer/`文件夹中，你也可以自行修改生成结果的保存路径。
 5. 模型加载时间较长，请耐心等待。
@@ -31,8 +31,8 @@
 2. Docker's basic image is based on the official image [pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime](https://hub.docker.com/layers/pytorch/pytorch/2.2.2-cuda12.1-cudnn8-runtime/images/sha256-923f687790bec78081c357e71dcd5dcef80b0cc00f6c34484902a5e83362c854?context=explore). You can also choose other versions of pytorch and CUDA. In addition, the default mount volume of the mirror is `D:\PythonProject\UniAnimate:/workspace/UniAnimate`. You can modify the path of the mount volume when starting the container.
 3. The progress bar of 3. webui is displayed for reference only. The specific execution progress and steps are subject to those displayed on the back command line. (In fact, I am not good at using Gradio ^_^)
 
-![alt text](image.png)
-![alt text](image-1.png)
+![image-1](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/16b7a35a-b27a-4a04-83d3-e845c5d35a85)
+![image](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/c0da755d-1cfa-434c-b45e-001d2cbb3af7)
 
 4. The final video generation result is in`/outputs/UniAnimate_infer/`folder.
 5. The models will take a long time to load, please wait patiently.
