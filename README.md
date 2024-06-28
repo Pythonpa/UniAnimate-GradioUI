@@ -19,7 +19,7 @@
     docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate -w /workspace/UniAnimate -d aimaster104/unianimate:webui python3 -m webui
     ```
     - c. 打开浏览器
-      完成容器启动后，可以打开浏览器`[localhost:7860](localhost:7860)`进入到浏览器WebUI中。
+      完成容器启动后，可以打开浏览器[localhost:7860](localhost:7860)进入到浏览器WebUI中。
 4. WebUI的进度条显示仅供参考，具体执行进度和步骤还是**以后台命令行显示的为准**。（其实是因为不太擅长用Gradio, ^_^）
 ![image-1](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/16b7a35a-b27a-4a04-83d3-e845c5d35a85)
 
@@ -50,7 +50,8 @@
     docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate -w /workspace/UniAnimate -d aimaster104/unianimate:webui python3 -m webui
     ```
     - c. Open your browser
-   When you have finished starting the container, you can open a browser and go to `[localhost:7860](localhost:7860)` WebUI.    
+      
+   When you have finished starting the container, you can open a browser and go to [localhost:7860](localhost:7860) WebUI.    
 
 4. The progress bar of webui is displayed for reference only. The specific execution progress and steps are subject to those displayed on the back command line. (In fact, I am not good at using Gradio ^_^)
 
