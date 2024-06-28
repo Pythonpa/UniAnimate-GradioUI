@@ -1,4 +1,5 @@
-![image](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/57c9abc6-162d-4e79-8c82-381342869fbf)# 使用说明 [zh]
+![image](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/57c9abc6-162d-4e79-8c82-381342869fbf)
+# 使用说明 [zh]
 1. 项目基于[UniAnimate](https://github.com/ali-vilab/UniAnimate),我仅在此项目基础上做了Docker镜像的构建，以及借助Claude 3.5的共同协助，写了一个非完成体的WebUI脚本，您可以继续自行完善（例如：配置文件的修改保存方法）。
 2. [上传中，未完成]Docker的基础镜像是基于[pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime](https://hub.docker.com/layers/pytorch/pytorch/2.2.2-cuda12.1-cudnn8-runtime/images/sha256-923f687790bec78081c357e71dcd5dcef80b0cc00f6c34484902a5e83362c854?context=explore)这个官方镜像的，你也可以自行选择其他版本的pytorch和CUDA。另外，镜像默认挂载卷`D:\PythonProject\UniAnimate:/workspace/UniAnimate`，你可以在启动容器时，自行修改挂载卷的路径。
     - 拉取镜像
