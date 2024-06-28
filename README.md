@@ -21,7 +21,7 @@
 5. 最终视频生成结果在`/outputs/UniAnimate_infer/`文件夹中，你也可以自行修改生成结果的保存路径。
 6. 关于[模型下载官方说明](https://github.com/ali-vilab/UniAnimate?tab=readme-ov-file#2-download-the-pretrained-checkpoints).
    另外，项目运行时，模型加载时间可能较长，请耐心等待。
-8. 如果你的显卡和内存硬件不够好（低于12G显存&16G内存），请选择用`[512,768]`的像素尺寸。
+8. 如果你的显卡和内存硬件不够好（最好高于12G显存&16G内存），请选择用`[512,768]`的像素尺寸。
 # 我的联系方式
 我的抖音账号: [AI大师工作流](https://www.douyin.com/user/MS4wLjABAAAAviq9ixG7tShWv_AJNEvCqlwZXd8YRTyCygSNpZ7J0aQ)
 [BiliBili](https://space.bilibili.com/10389026),[小红书](https://www.xiaohongshu.com/user/profile/6358ac17000000001802adac)，今日头条，快手等短视频平台均同号。
@@ -38,7 +38,7 @@
 
 4. The final video generation result is in`/outputs/UniAnimate_infer/`folder.
 5. About[Models Downloading,follow the official instructions](https://github.com/ali-vilab/UniAnimate?tab=readme-ov-file#2-download-the-pretrained-checkpoints).The models will take a long time to load, please wait patiently.
-6. If your graphics card and memory hardware are not good enough (less than 12G video memory & 16G memory), please choose the pixel size of `[512,768]`.
+6. If your graphics card and memory hardware are not good enough (Better than 12G VRAM & 16G RAM), please choose the pixel size of `[512,768]`.
 # My social media
 My social media account: [AI Master Workflow](https://www.douyin.com/user/MS4wLjABAAAAviq9ixG7tShWv_AJNEvCqlwZXd8YRTyCygSNpZ7J0aQ)  
 [BiliBili](https://space.bilibili.com/10389026), and other short video platforms are all the same account.
