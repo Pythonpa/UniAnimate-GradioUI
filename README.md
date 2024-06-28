@@ -7,6 +7,10 @@
     ```shell
     docker pull aimaster104/unianimate:webui
     ```
+    - 拉取镜像-->阿里云镜像
+    ```shell
+    另有阿里云私有镜像
+    ```
     
     - b. 启动容器
     ```shell
