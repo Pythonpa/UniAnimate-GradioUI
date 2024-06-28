@@ -4,7 +4,7 @@
 2. 如果你安装的是Windows版本，也可以使用该UI脚本，但是请确保你的各目录路径设置正确。从头部署项目建议用`pip install -r requirements2.txt`,该依赖适配于python=3.10, CUDA=12.1, pytorch=2.2.2 
 3. Docker的基础镜像基于[pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime](https://hub.docker.com/layers/pytorch/pytorch/2.2.2-cuda12.1-cudnn8-runtime/images/sha256-923f687790bec78081c357e71dcd5dcef80b0cc00f6c34484902a5e83362c854?context=explore)这个官方镜像，你也可以自行选择其他版本的pytorch和CUDA。另外，镜像默认挂载卷`D:\PythonProject\UniAnimate:/workspace/UniAnimate`，你可以在启动容器时，自行修改挂载卷的路径。镜像使用方法：
     - a. 拉取镜像
-    ```shell
+    ```shell-->Docker hub
     docker pull aimaster104/unianimate:webui
     ```
     - 拉取镜像-->阿里云镜像
