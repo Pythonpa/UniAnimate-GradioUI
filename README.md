@@ -16,7 +16,7 @@
     
     - b. 启动容器
     ```shell
-    docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate:/workspace/UniAnimate -w /workspace/UniAnimate -d aimaster104/unianimate:webui python3 -m webui
+    docker run --gpus all -p 7860:7860 --name UniAnimate-webui -v D:\PythonProject\UniAnimate-GradioUI:/workspace/UniAnimate -w /workspace/UniAnimate -d aimaster104/unianimate:webui python3 -m webui
     ```
     - c. 打开浏览器
       
