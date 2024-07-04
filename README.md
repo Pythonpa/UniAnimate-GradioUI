@@ -1,6 +1,6 @@
 ![image](https://github.com/Pythonpa/UniAnimate-GradioUI/assets/16030016/57c9abc6-162d-4e79-8c82-381342869fbf)
 # News
-- 新增`Docker_自动启动.bat`批处理脚本，在你安装并正确配置了Git, CUDA, Docker的前提下，基本可以实现从`Docker pull` & `gi clone`到浏览器WebUI页面**一键启动**的功能。
+- 新增`Docker_自动启动.bat`批处理脚本，在你安装并正确配置了Git, CUDA, Docker的前提下，基本可以实现从`Docker pull` & `git clone`到浏览器WebUI页面**一键启动**的功能。
 # 使用说明 [zh]
 1. 项目基于[UniAnimate](https://github.com/ali-vilab/UniAnimate),我仅在此项目基础上做了Docker镜像的构建，以及借助Claude 3.5的共同协助，写了一个非完成体的WebUI脚本，您可以继续自行完善（例如：配置文件的修改保存方法）。
 2. 如果你安装的是Windows版本，也可以使用该UI脚本，但是请确保你的各目录路径设置正确。从头部署项目建议用`pip install -r requirements2.txt`,该依赖适配于python=3.10, CUDA=12.1, pytorch=2.2.2 
