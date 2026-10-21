@@ -38,7 +38,7 @@
 ****************************
 
 # Instructions for use [en]
-1. The project is based on [UniAnimate](https://github.com/ali-vilab/UniAnimate). I only built the Docker image on this project and wrote a non-completed script of WebUI with the help of Claude 3.5. You can continue to improve it yourself (for example, the modification and saving method of the configuration file).
+1. The project is based on [UniAnimate](https://github.com/ali-vilab/UniAnimate). I only built the Docker image on this project and wrote a non-completed script of WebUI with the help of Claude and Codex. You can continue to improve it yourself (for example, the modification and saving method of the configuration file).
 2. You can also use this UI script if you are installing the Windows version, but make sure that your directory paths are set correctly. It is recommended to use `pip install -r requirements2.txt` for the project to deploy from scratch, which is adapted to python = 3.10, CUDA = 12.1, pytorch = 2.2.2
 3. This Docker image is based on [pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime](https://hub.docker.com/layers/pytorch/pytorch/2.2.2-cuda12.1-cudnn8-runtime/images/sha256-923f687790bec78081c357e71dcd5dcef80b0cc00f6c34484902a5e83362c854?context=explore)，You can also choose other versions of pytorch and CUDA. In addition, the default mount volume of the mirror is `D:\PythonProject\UniAnimate:/workspace/UniAnimate`. You can modify the path of the mount volume when starting the container. Docker use method:
    - a. Docker pull
